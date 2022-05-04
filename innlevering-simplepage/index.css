@@ -1,0 +1,204 @@
+html body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro";
+}
+
+/* TABLE OF CONTENTS
+
+    1. HEADER
+    2. HERO
+    3. CONTENT
+*/
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  color: #55b169;
+  font-weight: 900;
+  margin: 1rem;
+}
+
+ul {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  list-style: none;
+}
+
+ul > li {
+  padding: 0 3rem 0 0.5rem;
+}
+
+a {
+  align-self: center;
+  margin: 0 1rem 0 auto;
+}
+
+.navbutton {
+  background: #55b169;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-style: none;
+  border-radius: 10rem;
+  padding: 0.7rem 3rem;
+  align-self: center;
+  margin: 0 1rem 0 auto;
+}
+
+.navbutton:hover {
+  background: #3f834d;
+}
+
+/* HERO */
+
+.hero {
+  background-color: #292c36;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8rem;
+}
+
+.hero h1 {
+  padding-top: 5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.hero h2 {
+  color: rgb(252, 197, 209);
+}
+
+.searchbox {
+  max-width: 35rem;
+  margin: 1rem 2rem 1rem 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  border-radius: 2rem;
+  align-self: center;
+}
+
+input {
+  color: #282a35;
+  width: 30rem;
+  border-style: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.subtext {
+  color: white;
+}
+
+.subtext:hover {
+  color: #55b169;
+}
+
+/* CONTENT */
+
+.information {
+  background: rgb(226, 253, 238);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 5rem;
+}
+
+.container > * {
+  flex-basis: 30rem;
+  text-align: center;
+}
+
+.bazooka {
+  max-width: 35rem;
+  min-height: 15rem;
+}
+
+.leftbox {
+  padding: auto 0;
+  margin: auto 0;
+}
+
+.coltext h2 {
+  font-size: 5.5rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.coltext h3 {
+  font-weight: bolder;
+}
+
+.colbuttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.colbuttons > * {
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 10rem;
+  border-style: none;
+  width: 13rem;
+  margin: 0.7rem;
+  padding: 0.7rem;
+  align-self: center;
+}
+
+.btnone,
+.btnthree {
+  color: white;
+}
+
+.btnone {
+  background: #55b169;
+}
+
+.btntwo {
+  background: #edff9b;
+}
+
+.btnthree {
+  background: #282a35;
+}
+
+/* FOOTER */
+
+footer {
+  background: #292c36;
+  min-height: 10rem;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  padding: 3rem;
+  max-width: 150ch;
+}
+
+footer > button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 5rem;
+  background: #55b169;
+  color: white;
+  padding: 0.7rem 20rem;
+  margin: 0 0 2rem 0;
+}
