@@ -6,3 +6,5 @@
 [Blackjack](https://kodehodeknut.github.io/blackjack/)
 
 [Simple page assignment](https://kodehodeknut.github.io/innlevering-simplepage/)
+
+[Password generator](https://kodehodeknut.github.io/solo%20project%20(3.4)/)
