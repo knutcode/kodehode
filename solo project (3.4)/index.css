@@ -1,0 +1,101 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter";
+  font-style: normal;
+  color: white;
+  margin: 2% auto;
+  padding: 0;
+  background: #1d1d1d;
+  max-width: 55rem;
+}
+
+/* 
+    TABLE OF CONTENTS 
+    1. CONTAINER
+    2. TOP SECTION
+    3. BOTTOM SECTION 
+*/
+
+/* ----- CONTAINER ----- */
+
+.container {
+  background: #1f2937;
+  padding: 4.6rem 5.1rem;
+  border-radius: 1.6rem;
+}
+
+/* ----- TOP SECTION ----- */
+
+h1 {
+  font-family: "karla";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  letter-spacing: -0.025em;
+  margin: 2em 0 1rem;
+  padding: 0;
+  max-width: 35rem;
+  line-height: 4rem;
+}
+
+h1 > span {
+  color: #4adf86;
+}
+
+.hero > p {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #d5d4d8;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.btn {
+  margin: 1.5rem 0 3.5rem;
+  padding: 3.5rem 0;
+  border-bottom: 1px #2f3e53 solid;
+}
+
+button {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 1.6rem;
+  color: white;
+  background: #10b981;
+  border-radius: 6px;
+  border: none;
+  padding: 0.75em 1.2em;
+}
+
+button:hover {
+  background: #21956e;
+}
+
+/* ----- BOTTOM SECTION ----- */
+
+.passwords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.7rem;
+  justify-content: space-between;
+}
+
+input {
+  border-radius: 6px;
+  outline-style: none;
+  border-style: none;
+  color: #fb7185;
+  padding: 1rem 0;
+}
+
+.icon {
+  background-image: url("img/Icon-2.png");
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #273549;
+  text-align: center;
+}
