@@ -5,10 +5,10 @@ let pwdFour = document.getElementById("pwd-el-four");
 
 function genPassword() {
   let characters = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  let passwordLength = 12;
+  let passwordLength = document.getElementById("slider");
   let password = "";
 
-  for (var i = 0; i <= passwordLength; i++) {
+  for (let i = 1; i <= passwordLength.value; i++) {
     let randomNumber = Math.floor(Math.random() * characters.length);
     password += characters.substring(randomNumber, randomNumber + 1);
   }

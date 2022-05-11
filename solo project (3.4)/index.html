@@ -26,6 +26,8 @@
           <button id="btn-el" onclick="renderPassword()">
             <img src="img/Icon-1.png" style="float: left; margin-right: 1em" /> Generate passwords
           </button>
+          <input id="slider" type="range" value="8" min="4" max="12" oninput="this.nextElementSibling.value = this.value" />
+          <output>8</output>
         </div>
 
         <div class="passwords">
@@ -39,4 +41,3 @@
     <script src="index.js"></script>
   </body>
 </html>
-

@@ -56,6 +56,8 @@ h1 > span {
 }
 
 .btn {
+  display: flex;
+  justify-content: space-between;
   margin: 1.5rem 0 3.5rem;
   padding: 3.5rem 0;
   border-bottom: 1px #2f3e53 solid;
@@ -84,7 +86,7 @@ button:hover {
 .passwords {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.7rem;
+  gap: 1rem;
   justify-content: space-between;
 }
 
@@ -94,6 +96,24 @@ input {
   border-style: none;
   color: #10b981;
   padding: 1rem 0;
+}
+
+#slider {
+  margin: 0 5px;
+  width: 18rem;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  cursor: pointer;
+  background: #273549;
+  border-radius: 20px;
+}
+
+output {
+  font-size: 1.6rem;
+  align-self: center;
+  margin: 0;
+  padding: 0;
 }
 
 .icon {
