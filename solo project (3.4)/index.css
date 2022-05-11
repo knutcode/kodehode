@@ -16,7 +16,9 @@ body {
     TABLE OF CONTENTS 
     1. CONTAINER
     2. TOP SECTION
+      - Header, subheader, generate button
     3. BOTTOM SECTION 
+      - password text-input(4)
 */
 
 /* ----- CONTAINER ----- */
@@ -68,14 +70,17 @@ button {
   border-radius: 6px;
   border: none;
   padding: 0.75em 1.2em;
+  transition-duration: 0.2s;
 }
 
 button:hover {
   background: #21956e;
+  cursor: pointer;
 }
 
 /* ----- BOTTOM SECTION ----- */
 
+/* div that contains all password values */
 .passwords {
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +92,7 @@ input {
   border-radius: 6px;
   outline-style: none;
   border-style: none;
-  color: #fb7185;
+  color: #10b981;
   padding: 1rem 0;
 }
 
@@ -99,3 +104,11 @@ input {
   background-color: #273549;
   text-align: center;
 }
+
+/* .icon:focus {
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: #273549;
+  text-align: center;
+} */

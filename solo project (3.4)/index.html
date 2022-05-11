@@ -23,16 +23,20 @@
         </div>
 
         <div class="btn">
-          <button id="btn-el"><img src="img/Icon-1.png" style="float: left; margin-right: 1em" /> Generate passwords</button>
+          <button id="btn-el" onclick="renderPassword()">
+            <img src="img/Icon-1.png" style="float: left; margin-right: 1em" /> Generate passwords
+          </button>
         </div>
 
         <div class="passwords">
-          <input size="27" type="text" class="icon" />
-          <input size="27" type="text" class="icon" />
-          <input size="27" type="text" class="icon" />
-          <input size="27" type="text" class="icon" />
+          <input id="pwd-el-one" size="27" type="text" class="icon" readonly />
+          <input id="pwd-el-two" size="27" type="text" class="icon" readonly />
+          <input id="pwd-el-three" size="27" type="text" class="icon" readonly />
+          <input id="pwd-el-four" size="27" type="text" class="icon" readonly />
         </div>
       </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
+
