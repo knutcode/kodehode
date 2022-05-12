@@ -30,11 +30,13 @@
           <output>8</output>
         </div>
 
+        <p class="copy-text">Click to copy a password</p>
+
         <div class="passwords">
-          <input id="pwd-el-one" type="text" class="icon" readonly />
-          <input id="pwd-el-two" type="text" class="icon" readonly />
-          <input id="pwd-el-three" type="text" class="icon" readonly />
-          <input id="pwd-el-four" type="text" class="icon" readonly />
+          <input id="pwd-el-one" type="text" class="icon" readonly onclick="copyText(this.id)" />
+          <input id="pwd-el-two" type="text" class="icon" readonly onclick="copyText(this.id)" />
+          <input id="pwd-el-three" type="text" class="icon" readonly onclick="copyText(this.id)" />
+          <input id="pwd-el-four" type="text" class="icon" readonly onclick="copyText(this.id)" />
         </div>
       </div>
     </main>

@@ -21,3 +21,8 @@ function renderPassword() {
   document.getElementById("pwd-el-three").value = genPassword();
   document.getElementById("pwd-el-four").value = genPassword();
 }
+
+function copyText(clicked_id) {
+  let copyText = document.getElementById(clicked_id);
+  navigator.clipboard.writeText(copyText.value);
+}
