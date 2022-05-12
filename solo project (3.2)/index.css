@@ -35,6 +35,16 @@ body {
   font-weight: 800;
   margin: 0px;
   padding: 15px 0 35px 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+::placeholder {
+  color: white;
 }
 
 .bottom {

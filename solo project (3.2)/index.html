@@ -7,17 +7,14 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   </head>
 
-  <body onload="calcConversion();calcNumber()">
+  <body onload="calcNumber()">
     <main class="converter">
       <section class="top">
         <h1 class="toptxt">Metric/Imperial unit conversion more test</h1>
-        <h2 class="result" id="dispNumb">&#8203</h2>
+        <input type="text" class="result" id="input-el" value="20" oninput="calcNumber()" maxlength="6" />
       </section>
 
       <section class="bottom">
