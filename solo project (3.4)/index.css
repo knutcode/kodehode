@@ -9,7 +9,6 @@ body {
   margin: 2% auto;
   padding: 0;
   background: #1d1d1d;
-  max-width: 55rem;
 }
 
 /* 
@@ -27,6 +26,8 @@ body {
   background: #1f2937;
   padding: 4.6rem 5.1rem;
   border-radius: 1.6rem;
+  width: 45rem;
+  margin: auto;
 }
 
 /* ----- TOP SECTION ----- */
@@ -86,7 +87,6 @@ button:hover {
 .passwords {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   justify-content: space-between;
 }
 
@@ -96,6 +96,8 @@ input {
   border-style: none;
   color: #10b981;
   padding: 1rem 0;
+  margin: 10px;
+  width: 45%;
 }
 
 #slider {
