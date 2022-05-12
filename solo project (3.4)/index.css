@@ -6,7 +6,7 @@ body {
   font-family: "Inter";
   font-style: normal;
   color: white;
-  margin: 2% auto;
+  margin: 0;
   padding: 0;
   background: #1d1d1d;
 }
@@ -27,7 +27,7 @@ body {
   padding: 4.6rem 5.1rem;
   border-radius: 1.6rem;
   width: 45rem;
-  margin: auto;
+  margin: 50px auto;
 }
 
 /* ----- TOP SECTION ----- */
