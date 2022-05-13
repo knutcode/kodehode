@@ -1,7 +1,9 @@
-let pwdOne = document.getElementById("pwd-el-one");
-let pwdTwo = document.getElementById("pwd-el-two");
-let pwdThree = document.getElementById("pwd-el-three");
-let pwdFour = document.getElementById("pwd-el-four");
+// let pwdOne = document.getElementById("pwd-el-one");
+// let pwdTwo = document.getElementById("pwd-el-two");
+// let pwdThree = document.getElementById("pwd-el-three");
+// let pwdFour = document.getElementById("pwd-el-four");
+
+//Not needed since elements are called inside the renderPassword() function
 
 function genPassword() {
   let characters = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
