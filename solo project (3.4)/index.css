@@ -133,7 +133,8 @@ output {
   font-size: 1.6rem;
   align-self: center;
   margin: 0;
-  padding: 0;
+  min-width: 18px;
+  text-align: right;
 }
 
 .icon {
@@ -151,4 +152,10 @@ output {
   background-position: center;
   background: #273549;
   text-align: center;
+} */
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
 } */
