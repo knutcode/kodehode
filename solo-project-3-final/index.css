@@ -1,0 +1,28 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  background: #1c1c1c;
+}
+
+/* TABLE OF CONTENTS  */
+
+.container {
+  margin: auto;
+  height: 72rem;
+  max-width: 55rem;
+  background: #ffffff;
+}
+
+header {
+  color: #2b283a;
+  background: #f5f5f5;
+  padding: 50px;
+  margin: auto;
+  text-align: center;
+}
