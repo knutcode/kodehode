@@ -9,10 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/47ebcfa049.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <div class="app-container">
+
       <header>
         <div class="text-wrapper">
           <h1>Invoice creator</h1>
@@ -32,15 +34,22 @@
           <h2>TOTAL</h2>
         </div>
 
+        <div class="list-render" id="list-render">
+
+        </div>
+
         <div class="total-price">
           <h2>NOTES</h2>
           <h2>TOTAL AMOUNT</h2>
         </div>
-        <div class="output-display">
+
+        <div class="output-render">
           <p class="note-txt">We accept cash, credit card or PayPal</p>
           <p class="dolla">$0</p>
         </div>
-        <button class="send-btn" id="send-btn">Send invoice</button>
+
+        <button class="send-btn" id="send-btn"><i class="fa-solid fa-envelope"></i>&#160 Send invoice</button>
+
       </div>
     </div>
 

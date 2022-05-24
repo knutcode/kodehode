@@ -5,7 +5,6 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
-  margin: 2rem;
   padding: 0;
   background: #1c1c1c;
 }
@@ -75,8 +74,16 @@ header * {
   padding: 12px 21px;
   border-radius: 7px;
   color: #4a4e74;
-  border: #d5d4d8 solid 1px;
+  border: #d5d4d8 solid 2px;
   background: none;
+  cursor: pointer;
+}
+
+.btn-wrapper button:hover {
+  color: #ffffff;
+  border: #3770ed solid 2px;
+  background: #3770ed;
+  transition-duration: 0.2s;
 }
 
 /* 3.2 price / input */
@@ -94,6 +101,21 @@ header * {
   margin-bottom: 20px;
 }
 
+.list-render {
+  display: flex;
+}
+
+.list-render * {
+  margin: 0;
+  padding: 0;
+}
+
+.price {
+  margin-left: auto;
+}
+
+/* 3.3 checkout / output */
+
 .total-price {
   display: flex;
   justify-content: space-between;
@@ -108,25 +130,23 @@ header * {
   color: #918e9b;
 }
 
-/* 3.3 checkout / output */
-
-.output-display {
+.output-render {
   display: flex;
   justify-content: space-between;
   color: #4a4e74;
 }
 
-.output-display * {
+.output-render * {
   margin: 0;
 }
 
-.output-display .note-txt {
+.output-render .note-txt {
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
 }
 
-.output-display .dolla {
+.output-render .dolla {
   font-size: 36px;
   font-weight: 600;
   line-height: 32px;
@@ -147,4 +167,13 @@ header * {
   color: white;
   background: #3770ed;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.send-btn:hover {
+  /* background: url(https://i.pinimg.com/originals/1f/4c/89/1f4c895f21e66eb4534dc1849ede13e0.gif) no-repeat;
+  padding: 30px 21px; */
+  background-size: cover;
+  background-position: center;
 }
