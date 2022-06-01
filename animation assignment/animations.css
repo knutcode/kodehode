@@ -1,0 +1,107 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  color: #303a43;
+  background: #e9dfe9;
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+  color: #e9dfe9;
+  background: #303a43;
+}
+
+header a {
+  color: #95deea;
+}
+
+h1 {
+  font-size: 3rem;
+  text-decoration-line: underline;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10rem;
+}
+
+.wrapper > * {
+  width: 250px;
+  height: 250px;
+  background: #303a43;
+}
+
+.box1 {
+  transition: width 2s, background 1s;
+}
+
+.box1:hover {
+  background: #774477;
+  width: 500px;
+}
+
+.box2 {
+  transition: all 1s cubic-bezier(1, 0.3, 0.3, 1);
+  border-radius: 50%;
+}
+
+.box2:hover {
+  background: #49967c;
+  width: 400px;
+  height: 400px;
+  border-radius: 0%;
+}
+
+.box3 {
+  transform: rotate(45deg);
+  transition: all 3s;
+}
+
+.box3:hover {
+  background: #8b4d4d;
+  transform: rotate(-270deg);
+}
+
+.box4 {
+  transition: transform 1s, background 2s;
+  background: #4e8b4d;
+}
+
+.box4:hover {
+  transform: translate(0, -100px);
+  background: #303a43;
+}
+
+.box5 {
+  transition: all 0.6s ease-in-out;
+  background: #d1db50;
+}
+
+.box5:hover {
+  background: #e9dfe900;
+  transform: skew(-45deg, 180deg);
+}
+
+.box6 {
+  background: #db5050;
+  transform-origin: bottom left;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.box6:hover {
+  background: #d1db50;
+  transform: rotate(-90deg);
+}

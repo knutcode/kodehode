@@ -1,0 +1,102 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  color: #e9dfe9;
+  background: #303a43;
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+  color: #303a43;
+  background: #e9dfe9;
+}
+
+h1 {
+  font-size: 3rem;
+  text-decoration-line: underline;
+}
+
+h1::selection {
+  background: #445462;
+  color: #e9dfe9;
+}
+
+h1::before {
+  content: "✌";
+}
+
+h1::after {
+  content: "👨";
+}
+
+.wrapper {
+  margin: 5rem auto 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  gap: 5rem;
+  max-width: 90%;
+}
+
+.wrapper > * {
+  margin: 1rem;
+  padding: 0 1em;
+  max-width: 250px;
+  background: #445462;
+}
+
+.wrapper p {
+  font-size: 2rem;
+}
+
+.wrapper p::selection {
+  background: #e9dfe9;
+  color: #303a43;
+}
+
+.wrapper h2::selection {
+  background: #e9dfe9;
+  color: #303a43;
+}
+
+.box1 p::first-letter {
+  font-size: 3.6rem;
+  float: left;
+  color: #445462;
+  background: #e9dfe9;
+}
+
+.box2 p::first-line {
+  word-spacing: 1em;
+  letter-spacing: 0.5em;
+  text-shadow: 1px 1px 1px #3d3c3c;
+  color: #445462;
+  background: #e9dfe9;
+  text-decoration: #7dabb1 wavy underline;
+}
+
+.box3 ul li::marker {
+  color: rgb(35, 255, 1);
+  font-size: 20px;
+}
+
+.box4 textarea {
+  width: 240px;
+  min-width: 120px;
+  max-width: 240px;
+  min-height: 160px;
+  max-height: 160px;
+}
+
+.box4 ::placeholder {
+  text-transform: uppercase;
+  background: #3e6339;
+  color: #ff9fff;
+  font-size: 1.5rem;
+}
