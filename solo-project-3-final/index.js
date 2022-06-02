@@ -22,4 +22,7 @@ let pull = {
   value: 30,
 };
 
-console.log(wash, mow, pull);
+//example for later
+wash.totalValue = wash.value + mow.value;
+
+console.log(wash.totalValue);

@@ -10,7 +10,7 @@ body {
 }
 
 /* TABLE OF CONTENTS 
-    1 container
+    1 app container
     2 header
     3 main
       3.1 buttons
@@ -19,7 +19,7 @@ body {
       3.4 send button
 */
 
-/* 1 container */
+/* 1 app container */
 
 .app-container {
   margin: auto;
@@ -31,6 +31,7 @@ body {
 /* 2 header */
 
 header {
+  line-height: 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +40,6 @@ header {
   height: 190px;
   color: #2b283a;
   background: #f5f5f5;
-  line-height: 28px;
 }
 
 header h1 {
@@ -100,10 +100,6 @@ header * {
   color: #918e9b;
   margin-bottom: 20px;
 }
-
-/* .list-render {
-  display: flex;
-} */
 
 .render-service * {
   display: flex;
