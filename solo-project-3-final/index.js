@@ -26,7 +26,9 @@ let pull = {
 };
 
 function pushTo(objSer, objVal) {
-  serviceArray.push(`<div><p>${objSer.service}</p> <button>Remove</button> <p class="price">$${objVal.value}</p></div>`);
+  serviceArray.push(
+    `<div><p>${objSer.service}</p> <button>Remove</button> <p class="price"><span>$</span>${objVal.value}</p></div>`
+  );
 }
 
 function displayService() {
@@ -48,9 +50,6 @@ function resetAll() {
   lawnBtn.disabled = false;
   weedsBtn.disabled = false;
 }
-//example for later
-// wash.totalValue = wash.value + mow.value;
-// console.log(wash.totalValue);
 
 carBtn.addEventListener("click", () => {
   valueArray.push(wash.value);
