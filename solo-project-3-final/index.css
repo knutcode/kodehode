@@ -88,12 +88,12 @@ header * {
 
 /* 3.2 price / input */
 
-.price-list {
+.service-list {
   display: flex;
   justify-content: space-between;
 }
 
-.price-list h2 {
+.service-list h2 {
   font-size: 12px;
   font-weight: 700;
   line-height: 20px;
@@ -105,20 +105,20 @@ header * {
   display: flex;
 } */
 
-.list-render * {
+.render-service * {
   display: flex;
 }
 
-.list-render * {
+.render-service * {
   margin: 6px 0;
   padding: 0;
 }
 
-.list-render > div > button {
+.render-service > div > button {
   margin-left: 10px;
 }
 
-.list-render > div > .price {
+.render-service > div > .price {
   margin-left: auto;
 }
 
@@ -154,7 +154,7 @@ header * {
   line-height: 15px;
 }
 
-.output-render .dolla {
+.output-render .render-total {
   font-size: 36px;
   font-weight: 600;
   line-height: 32px;
