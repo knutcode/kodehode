@@ -13,7 +13,7 @@ let wash = {
 };
 
 let mow = {
-  service: "mown lawn",
+  service: "Mown Lawn",
   value: 20,
 };
 
