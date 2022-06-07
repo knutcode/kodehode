@@ -9,13 +9,13 @@ let renderTotal = document.getElementById("render-total");
 let serviceArray = [];
 let valueArray = [];
 
-let wash = { service: "Wash Car", value: 10 };
-let mow = { service: "Mow Lawn", value: 20 };
-let pull = { service: "Pull weeds", value: 30 };
+let wash = { service: "Wash Car", value: 10, class: "removeWash" };
+let mow = { service: "Mow Lawn", value: 20, class: "removeMow" };
+let pull = { service: "Pull weeds", value: 30, class: "removePull" };
 
-function pushTo(objSer, objVal) {
+function pushTo(objSer, objVal, objCla) {
   serviceArray.push(
-    `<div><p>${objSer.service}</p> <button onclick="remove()">Remove</button> <p class="price"><span>$</span>${objVal.value}</p></div>`
+    `<div><p>${objSer.service}</p> <button onclick="${objCla.class}()">Remove</button> <p class="price"><span>$</span>${objVal.value}</p></div>`
   );
 }
 
@@ -31,7 +31,7 @@ function displayTotal() {
 
 carBtn.addEventListener("click", () => {
   valueArray.push(wash.value);
-  pushTo(wash, wash);
+  pushTo(wash, wash, wash);
   displayService();
   displayTotal();
   carBtn.disabled = true;
@@ -39,7 +39,7 @@ carBtn.addEventListener("click", () => {
 
 lawnBtn.addEventListener("click", () => {
   valueArray.push(mow.value);
-  pushTo(mow, mow);
+  pushTo(mow, mow, mow);
   displayService();
   displayTotal();
   lawnBtn.disabled = true;
@@ -47,12 +47,12 @@ lawnBtn.addEventListener("click", () => {
 
 weedsBtn.addEventListener("click", () => {
   valueArray.push(pull.value);
-  pushTo(pull, pull);
+  pushTo(pull, pull, pull);
   displayService();
   displayTotal();
   weedsBtn.disabled = true;
 });
-
+//REMOVE AND RESET FUNCTIONS
 function resetAll() {
   serviceArray = [];
   valueArray = [];
@@ -67,10 +67,31 @@ sendBtn.addEventListener("click", () => {
   resetAll();
 });
 
-// function remove() {
-//   console.log(
-//     serviceArray.indexOf(
-//       `<div class="item"><p>Wash Car</p> <button class="idBtn" id="idBtn" onclick="remove()">Remove</button> <p class="price"><span class="dollar">$</span>10</p></div>`
-//     )
-//   );
-// }
+function remove(objSer, objVal, objCla) {
+  let index = serviceArray.indexOf(
+    `<div><p>${objSer.service}</p> <button onclick="${objCla.class}()">Remove</button> <p class="price"><span>$</span>${objVal.value}</p></div>`
+  );
+  serviceArray.splice(index, 1);
+  valueArray.splice(index, 1);
+}
+
+function removeWash() {
+  remove(wash, wash, wash);
+  displayService();
+  displayTotal();
+  carBtn.disabled = false;
+}
+
+function removeMow() {
+  remove(mow, mow, mow);
+  displayService();
+  displayTotal();
+  lawnBtn.disabled = false;
+}
+
+function removePull() {
+  remove(pull, pull, pull);
+  displayService();
+  displayTotal();
+  weedsBtn.disabled = false;
+}
