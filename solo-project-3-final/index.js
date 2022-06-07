@@ -2,7 +2,6 @@ let carBtn = document.getElementById("car-btn");
 let lawnBtn = document.getElementById("lawn-btn");
 let weedsBtn = document.getElementById("weeds-btn");
 let sendBtn = document.getElementById("send-btn");
-let mainContainer = document.getElementById("main-container");
 
 let renderService = document.getElementById("render-service");
 let renderTotal = document.getElementById("render-total");
@@ -67,3 +66,11 @@ function resetAll() {
 sendBtn.addEventListener("click", () => {
   resetAll();
 });
+
+// function remove() {
+//   console.log(
+//     serviceArray.indexOf(
+//       `<div class="item"><p>Wash Car</p> <button class="idBtn" id="idBtn" onclick="remove()">Remove</button> <p class="price"><span class="dollar">$</span>10</p></div>`
+//     )
+//   );
+// }
