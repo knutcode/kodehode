@@ -91,6 +91,7 @@ header * {
 }
 
 .btn-wrapper button:active:enabled {
+  color: #ffffff;
   background: #3257a8;
   border: #3257a8 solid 2px;
   cursor: pointer;
