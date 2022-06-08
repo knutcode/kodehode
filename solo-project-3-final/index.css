@@ -77,13 +77,22 @@ header * {
   border: #d5d4d8 solid 2px;
   background: none;
   cursor: pointer;
+  transition-duration: 0.15s;
+}
+
+.btn-wrapper button:disabled {
+  color: #d5d4d8;
 }
 
 .btn-wrapper button:hover {
   color: #ffffff;
   border: #3770ed solid 2px;
   background: #3770ed;
-  transition-duration: 0.2s;
+}
+
+.btn-wrapper button:active {
+  background: #3257a8;
+  border: #3257a8 solid 2px;
 }
 
 /* 3.2 price / input */
