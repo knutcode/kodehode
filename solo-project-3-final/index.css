@@ -84,13 +84,13 @@ header * {
   color: #d5d4d8;
 }
 
-.btn-wrapper button:hover {
+.btn-wrapper button:hover:enabled {
   color: #ffffff;
   border: #3770ed solid 2px;
   background: #3770ed;
 }
 
-.btn-wrapper button:active {
+.btn-wrapper button:active:enabled {
   background: #3257a8;
   border: #3257a8 solid 2px;
 }
