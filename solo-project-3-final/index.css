@@ -76,7 +76,6 @@ header * {
   color: #4a4e74;
   border: #d5d4d8 solid 2px;
   background: none;
-  cursor: pointer;
   transition-duration: 0.15s;
 }
 
@@ -88,11 +87,13 @@ header * {
   color: #ffffff;
   border: #3770ed solid 2px;
   background: #3770ed;
+  cursor: pointer;
 }
 
 .btn-wrapper button:active:enabled {
   background: #3257a8;
   border: #3257a8 solid 2px;
+  cursor: pointer;
 }
 
 /* 3.2 price / input */
