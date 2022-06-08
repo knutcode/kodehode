@@ -1,0 +1,32 @@
+html {
+  background: black;
+}
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+audio {
+  display: none;
+}
+
+.cont-one {
+  background: rgb(101, 85, 128);
+  width: 600px;
+  margin: auto;
+  padding: 25px;
+}
+
+.textClr {
+  color: white;
+}
+
+.big-text {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.medium-text {
+  font-size: 30px;
+}
