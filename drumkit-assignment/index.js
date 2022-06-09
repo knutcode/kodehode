@@ -123,65 +123,65 @@ document.addEventListener("keydown", (e) => {
     case "KeyQ":
       if (e.repeat === false) {
         document.getElementById("clap").classList.add("pressed");
-        setTimeout(function () {
+        document.addEventListener("keyup", () => {
           document.getElementById("clap").classList.remove("pressed");
-        }, 250);
+        });
       }
       break;
     case "KeyW":
       if (e.repeat === false) {
         document.getElementById("hihat").classList.add("pressed");
-        setTimeout(function () {
+        document.addEventListener("keyup", () => {
           document.getElementById("hihat").classList.remove("pressed");
-        }, 250);
+        });
       }
       break;
     case "KeyE":
       if (e.repeat === false) {
         document.getElementById("kick").classList.add("pressed");
-        setTimeout(function () {
+        document.addEventListener("keyup", () => {
           document.getElementById("kick").classList.remove("pressed");
-        }, 250);
+        });
       }
       break;
     case "KeyR":
       if (e.repeat === false) {
         document.getElementById("openhat").classList.add("pressed");
-        setTimeout(function () {
+        document.addEventListener("keyup", () => {
           document.getElementById("openhat").classList.remove("pressed");
-        }, 250);
+        });
       }
       break;
     case "KeyU":
       if (e.repeat === false) {
         document.getElementById("ride").classList.add("pressed");
-        setTimeout(function () {
+        document.addEventListener("keyup", () => {
           document.getElementById("ride").classList.remove("pressed");
-        }, 250);
+        });
       }
       break;
     case "KeyI":
       if (e.repeat === false) {
         document.getElementById("snare").classList.add("pressed");
-        setTimeout(function () {
+        document.addEventListener("keyup", () => {
           document.getElementById("snare").classList.remove("pressed");
-        }, 250);
+        });
       }
       break;
     case "KeyO":
       if (e.repeat === false) {
         document.getElementById("tink").classList.add("pressed");
-        setTimeout(function () {
+        document.addEventListener("keyup", () => {
           document.getElementById("tink").classList.remove("pressed");
-        }, 250);
+        });
       }
       break;
     case "KeyP":
       if (e.repeat === false) {
         document.getElementById("tom").classList.add("pressed");
-        setTimeout(function () {
+        document.addEventListener("keyup", () => {
           document.getElementById("tom").classList.remove("pressed");
-        }, 250);
+        });
       }
   }
 });
