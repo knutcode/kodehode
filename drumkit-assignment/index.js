@@ -1,4 +1,4 @@
-// // MY INITIAL SOLUTION (NEEDS AUDIO IN HTML)
+// // MY INITIAL SOLUTION (NEEDED AUDIO IN HTML)
 
 // document.addEventListener("keydown", (e) => {
 //   if (e.key == "q" && e.repeat === false) {
