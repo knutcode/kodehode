@@ -45,14 +45,14 @@
 
 //NEW SOLUTION USING SWITCH AND GETTING AUDIO FROM JS
 
-let clap = new Audio("drums/clap.wav");
-let hihat = new Audio("drums/hihat.wav");
-let kick = new Audio("drums/kick.wav");
-let openhat = new Audio("drums/openhat.wav");
-let ride = new Audio("drums/ride.wav");
-let snare = new Audio("drums/snare.wav");
-let tink = new Audio("drums/tink.wav");
-let tom = new Audio("drums/tom.wav");
+// let clap = new Audio("drums/clap.wav");
+// let hihat = new Audio("drums/hihat.wav");
+// let kick = new Audio("drums/kick.wav");
+// let openhat = new Audio("drums/openhat.wav");
+// let ride = new Audio("drums/ride.wav");
+// let snare = new Audio("drums/snare.wav");
+// let tink = new Audio("drums/tink.wav");
+// let tom = new Audio("drums/tom.wav");
 
 // document.addEventListener("keydown", (e) => {
 //   switch (e.code) {
@@ -118,35 +118,45 @@ let playSound = (sound) => {
   sound.currentTime = 0;
 };
 
+//i got lazy..
+
 function clapClick() {
+  let clap = new Audio("drums/clap.wav");
   clap.play();
   clap.currentTime = 0;
 }
 function hihatClick() {
+  let hihat = new Audio("drums/hihat.wav");
   hihat.play();
   hihat.currentTime = 0;
 }
 function kickClick() {
+  let kick = new Audio("drums/kick.wav");
   kick.play();
   kick.currentTime = 0;
 }
 function openhatClick() {
+  let openhat = new Audio("drums/openhat.wav");
   openhat.play();
   openhat.currentTime = 0;
 }
 function rideClick() {
+  let ride = new Audio("drums/ride.wav");
   ride.play();
   ride.currentTime = 0;
 }
 function snareClick() {
+  let snare = new Audio("drums/snare.wav");
   snare.play();
   snare.currentTime = 0;
 }
 function tinkClick() {
+  let tink = new Audio("drums/tink.wav");
   tink.play();
   tink.currentTime = 0;
 }
 function tomClick() {
+  let tom = new Audio("drums/tom.wav");
   tom.play();
   tom.currentTime = 0;
 }
