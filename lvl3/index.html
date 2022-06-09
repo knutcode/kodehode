@@ -6,21 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drums</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="data:;base64,=" />
     <script src="index.js"></script>
   </head>
   <body>
-    <div class="container cont-one">
-      <h1 class="big-text textClr">DRUMS</h1>
-      <p class="medium-text textClr">QWER | UIOP</p>
-    </div>
+    <div class="drum-kit">
+      <section class="sec-one">
+        <h1 class="big-text textClr">🥁 DRUMS 🥁</h1>
+        <p class="medium-text textClr">QWER - UIOP</p>
+        <p class="textClr">Use these keys or interact with the board and drum away!</p>
+      </section>
 
-    <!-- <audio src="drums/clap.wav" id="clap" type="audio/mpeg"></audio>
-    <audio src="drums/hihat.wav" id="hihat" type="audio/mpeg"></audio>
-    <audio src="drums/kick.wav" id="kick" type="audio/mpeg"></audio>
-    <audio src="drums/openhat.wav" id="openhat" type="audio/mpeg"></audio>
-    <audio src="drums/ride.wav" id="ride" type="audio/mpeg"></audio>
-    <audio src="drums/snare.wav" id="snare" type="audio/mpeg"></audio>
-    <audio src="drums/tink.wav" id="tink" type="audio/mpeg"></audio>
-    <audio src="drums/tom.wav" id="tom" type="audio/mpeg"></audio> -->
+      <section class="sec-two">
+        <div class="container">
+          <div class="container flex" id="btnCont">
+            <button onclick="clapClick()">Clap <span onclick="clapClick()">Q</span></button>
+            <button onclick="hihatClick()">Hihat <span onclick="hihatClick()">W</span></button>
+            <button onclick="kickClick()">Kick <span onclick="kickClick()">E</span></button>
+            <button onclick="openhatClick()">Openhat <span onclick="openhatClick()">R</span></button>
+            <button onclick="rideClick()">Ride <span onclick="rideClick()">U</span></button>
+            <button onclick="snareClick()">Snare <span onclick="snareClick()">I</span></button>
+            <button onclick="tinkClick()">Tink <span onclick="tinkClick()">O</span></button>
+            <button onclick="tomClick()">Tom <span onclick="tomClick()">P</span></button>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

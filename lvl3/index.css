@@ -1,32 +1,62 @@
-html {
-  background: black;
-}
 body {
+  display: flex;
+  justify-content: center;
   font-family: sans-serif;
   text-align: center;
   margin: 0;
+  background: #222628;
 }
 
-audio {
-  display: none;
-}
-
-.cont-one {
-  background: rgb(101, 85, 128);
-  width: 600px;
-  margin: auto;
-  padding: 25px;
-}
-
+/* typography */
 .textClr {
-  color: white;
+  color: #f0f0f0;
 }
 
 .big-text {
   font-size: 50px;
   font-weight: 500;
+  margin-top: 10px;
 }
 
 .medium-text {
   font-size: 30px;
+}
+
+button {
+  font-size: 20px;
+}
+
+span {
+  display: block;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* other shit */
+
+section {
+  width: 600px;
+  padding: 25px;
+}
+
+.sec-one {
+  background: #3e4b4f;
+}
+
+.sec-two {
+  background: #f0f0f0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  width: 100px;
 }

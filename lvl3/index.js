@@ -45,14 +45,14 @@
 
 //NEW SOLUTION USING SWITCH AND GETTING AUDIO FROM JS
 
-// let clap = new Audio("drums/clap.wav");
-// let hihat = new Audio("drums/hihat.wav");
-// let kick = new Audio("drums/kick.wav");
-// let openhat = new Audio("drums/openhat.wav");
-// let ride = new Audio("drums/ride.wav");
-// let snare = new Audio("drums/snare.wav");
-// let tink = new Audio("drums/tink.wav");
-// let tom = new Audio("drums/tom.wav");
+let clap = new Audio("drums/clap.wav");
+let hihat = new Audio("drums/hihat.wav");
+let kick = new Audio("drums/kick.wav");
+let openhat = new Audio("drums/openhat.wav");
+let ride = new Audio("drums/ride.wav");
+let snare = new Audio("drums/snare.wav");
+let tink = new Audio("drums/tink.wav");
+let tom = new Audio("drums/tom.wav");
 
 // document.addEventListener("keydown", (e) => {
 //   switch (e.code) {
@@ -94,14 +94,14 @@
 //SOLUTION USING ARRAY AND GOING THROUGH EACH OBJECT
 
 const allSounds = [
-  { key: "q", sound: new Audio("drums/clap.wav") },
-  { key: "w", sound: new Audio("drums/hihat.wav") },
-  { key: "e", sound: new Audio("drums/kick.wav") },
-  { key: "r", sound: new Audio("drums/openhat.wav") },
-  { key: "u", sound: new Audio("drums/ride.wav") },
-  { key: "i", sound: new Audio("drums/snare.wav") },
-  { key: "o", sound: new Audio("drums/tink.wav") },
-  { key: "p", sound: new Audio("drums/tom.wav") },
+  { key: "q", sound: new Audio("drums/clap.wav"), name: "Clap" },
+  { key: "w", sound: new Audio("drums/hihat.wav"), name: "Hihat" },
+  { key: "e", sound: new Audio("drums/kick.wav"), name: "Kick" },
+  { key: "r", sound: new Audio("drums/openhat.wav"), name: "Openhat" },
+  { key: "u", sound: new Audio("drums/ride.wav"), name: "Ride" },
+  { key: "i", sound: new Audio("drums/snare.wav"), name: "Snare" },
+  { key: "o", sound: new Audio("drums/tink.wav"), name: "Tink" },
+  { key: "p", sound: new Audio("drums/tom.wav"), name: "Tom" },
 ];
 
 document.addEventListener("keydown", (e) => {
@@ -117,3 +117,36 @@ let playSound = (sound) => {
   sound.play();
   sound.currentTime = 0;
 };
+
+function clapClick() {
+  clap.play();
+  clap.currentTime = 0;
+}
+function hihatClick() {
+  hihat.play();
+  hihat.currentTime = 0;
+}
+function kickClick() {
+  kick.play();
+  kick.currentTime = 0;
+}
+function openhatClick() {
+  openhat.play();
+  openhat.currentTime = 0;
+}
+function rideClick() {
+  ride.play();
+  ride.currentTime = 0;
+}
+function snareClick() {
+  snare.play();
+  snare.currentTime = 0;
+}
+function tinkClick() {
+  tink.play();
+  tink.currentTime = 0;
+}
+function tomClick() {
+  tom.play();
+  tom.currentTime = 0;
+}
