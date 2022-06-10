@@ -2,6 +2,7 @@
 
 Module 3
 
+[counter](https://kodehodeknut.github.io/counter/)
 
 [Blackjack](https://kodehodeknut.github.io/blackjack/)
 
@@ -17,11 +18,8 @@ Module 3
 
 other stuff
 
-
-[Pled](https://kodehodeknut.github.io/TESTBENCH/)
-
-[ville bark counter](https://kodehodeknut.github.io/counter/)
-
 [Simple page assignment](https://kodehodeknut.github.io/innlevering-simplepage/)
 
 [Transition assignment](https://kodehodeknut.github.io/animation%20assignment/)
+
+[Drumkit assignment](https://kodehodeknut.github.io/drumkit-assignment/)
