@@ -1,0 +1,120 @@
+html {
+  font-size: 62.5%;
+  font-family: monaco, Consolas, Lucida Console, monospace;
+}
+
+body {
+  margin-top: 15vh;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  background: rgb(18, 18, 18);
+  color: whitesmoke;
+}
+
+main {
+  width: 350px;
+  text-align: center;
+}
+
+section * {
+  font-size: 1.6rem;
+  font-family: monaco, Consolas, Lucida Console, monospace;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+section input {
+  padding: 0.5em 0.5em 0.5em 1.2em;
+  border-radius: 2rem 0 0 2rem;
+}
+
+section button {
+  padding: 0.5em 1em;
+  border-radius: 0 2rem 2rem 0;
+  background: #191c1c;
+  color: #9ca4af;
+  transition: 0.2s;
+}
+
+section button:hover {
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+section button:active {
+  color: #9ca4af;
+}
+
+p {
+  color: #9ca4af;
+  margin-bottom: 2.5em;
+}
+
+#p-el {
+  margin: 30px auto 0;
+  height: 27px;
+  width: 200px;
+}
+
+ul {
+  margin: 0;
+  padding: 0.5em 1em;
+  list-style-type: none;
+}
+
+li {
+  margin: 0 auto;
+  height: 35px;
+  display: flex;
+}
+
+li * {
+  margin: auto 0;
+}
+
+li p {
+  margin-right: auto;
+}
+
+li p::before {
+  content: "*";
+}
+
+li button {
+  font-size: 1.6rem;
+  font-family: monaco, Consolas, Lucida Console, monospace;
+  border: none;
+  border-left: 2px solid #9ca4af71;
+  background: none;
+  cursor: pointer;
+  color: #9ca4af;
+  width: 6ch;
+  line-height: 15px;
+}
+
+li button:hover {
+  color: whitesmoke;
+  cursor: pointer;
+  border-left: 2px solid whitesmoke;
+}
+li button:active {
+  color: #9ca4af;
+  cursor: pointer;
+  /* border-left: 2px solid #9ca4af71; */
+}
+
+.wiped {
+  text-decoration: line-through #ffffff;
+  color: #9ca4af;
+}
+
+.hidden {
+  display: none;
+}
+
+.done {
+  cursor: pointer;
+  border-left: 2px solid whitesmoke;
+}
