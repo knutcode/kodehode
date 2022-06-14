@@ -3,12 +3,18 @@ html {
   font-family: monaco, Consolas, Lucida Console, monospace;
 }
 
+html *::selection {
+  background: whitesmoke;
+  color: #121212;
+}
+
 body {
   margin-top: 15vh;
+  margin-bottom: 20rem;
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
-  background: rgb(18, 18, 18);
+  background: #121212;
   color: whitesmoke;
 }
 
@@ -28,23 +34,24 @@ section * {
 section input {
   padding: 0.5em 0.5em 0.5em 1.2em;
   border-radius: 2rem 0 0 2rem;
+  background: whitesmoke;
 }
 
 section button {
   padding: 0.5em 1em;
   border-radius: 0 2rem 2rem 0;
-  background: #191c1c;
-  color: #9ca4af;
-  transition: 0.2s;
+  /* border: 1px solid #9ca4af; */
+  background: #9ca4af71;
+  color: whitesmoke;
 }
 
 section button:hover {
-  color: whitesmoke;
+  background: #9ca4afb9;
   cursor: pointer;
 }
 
 section button:active {
-  color: #9ca4af;
+  color: #121212;
 }
 
 p {
@@ -53,7 +60,7 @@ p {
 }
 
 #p-el {
-  margin: 30px auto 0;
+  margin: 30px auto 1px;
   height: 27px;
   width: 200px;
 }
@@ -102,7 +109,6 @@ li button:hover {
 li button:active {
   color: #9ca4af;
   cursor: pointer;
-  /* border-left: 2px solid #9ca4af71; */
 }
 
 .wiped {
@@ -114,12 +120,12 @@ li button:active {
   display: none;
 }
 
-.done {
+.completed {
   cursor: pointer;
   border-left: 2px solid whitesmoke;
 }
 
-.clear-button {
+.under-button {
   margin-top: 20px;
   font-size: 1.6rem;
   font-family: monaco, Consolas, Lucida Console, monospace;
@@ -130,8 +136,14 @@ li button:active {
   color: #9ca4af;
 }
 
-.clear-button:hover {
+.under-button:hover {
   color: whitesmoke;
   cursor: pointer;
   border-bottom: 2px solid whitesmoke;
+}
+
+.under-button:active {
+  color: #9ca4af;
+  cursor: pointer;
+  border-bottom: 2px solid #9ca4af71;
 }
