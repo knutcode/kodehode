@@ -18,6 +18,7 @@ submitBtn.addEventListener("click", () => {
 clearBtn.addEventListener("click", () => {
   document.querySelector("#p-el").textContent = "*awaiting tasks*";
   document.querySelectorAll("li").forEach((li) => li.remove());
+  localStorage.clear();
 }); //^ clears the entire list and resets "status" of list
 
 sortBtn.addEventListener("click", () => {
