@@ -5,13 +5,11 @@ const sortBtn = document.querySelector("#sort-abc-button");
 
 userInput.addEventListener("keyup", (e) => {
   if (e.code !== "Enter" || userInput.value.match(/^ *$/)) return;
-  userInput.focus();
   addToList();
 }); //^ value from input appends to list when enter key is pressed
 
 submitBtn.addEventListener("click", () => {
   if (userInput.value.match(/^ *$/)) return;
-  userInput.focus();
   addToList();
 }); //^ value from input appends to list when submit button is pressed
 
@@ -31,6 +29,9 @@ sortBtn.addEventListener("click", () => {
 function addToList() {
   if (userInput.value.match("task")) {
     window.open("https://www.youtube.com/watch?v=atQOxz9a1zo", "_blank");
+    userInput.placeholder = "*add a real task...";
+    userInput.focus();
+    userInput.value = "";
     //^ little trolling
   } else {
     document.querySelector("#p-el").textContent = "your list";
@@ -62,6 +63,7 @@ function addToList() {
     }); //^ "wipes out" selected task and "marks it as completed", adds option to remove after.
 
     btn.addEventListener("click", () => li.remove());
+    userInput.focus();
     userInput.value = "";
     //^ function to remove selected task from list and clears the input-field
   }
