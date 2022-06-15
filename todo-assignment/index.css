@@ -10,7 +10,7 @@ html *::selection {
 
 body {
   margin-top: 15vh;
-  margin-bottom: 20rem;
+  margin-bottom: 12.5rem;
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
