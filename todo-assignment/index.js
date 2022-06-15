@@ -18,7 +18,6 @@ submitBtn.addEventListener("click", () => {
 clearBtn.addEventListener("click", () => {
   document.querySelector("#p-el").textContent = "*awaiting tasks*";
   document.querySelectorAll("li").forEach((li) => li.remove());
-  localStorage.clear();
 }); //^ clears the entire list and resets "status" of list
 
 sortBtn.addEventListener("click", () => {
@@ -30,35 +29,40 @@ sortBtn.addEventListener("click", () => {
 }); //^ sorts list numerically and alphabetically top to bottom
 
 function addToList() {
-  document.querySelector("#p-el").textContent = "your list";
-  //^ sets list title ()
+  if (userInput.value.match("task")) {
+    window.open("https://www.youtube.com/watch?v=atQOxz9a1zo", "_blank");
+    //^ little trolling
+  } else {
+    document.querySelector("#p-el").textContent = "your list";
+    //^ sets list title ()
 
-  const li = document.createElement("li");
-  const p = document.createElement("p");
-  const wipe = document.createElement("button");
-  const btn = document.createElement("button");
-  //^ creates elements to be used in list
+    const li = document.createElement("li");
+    const p = document.createElement("p");
+    const wipe = document.createElement("button");
+    const btn = document.createElement("button");
+    //^ creates elements to be used in list
 
-  p.textContent = userInput.value;
-  wipe.textContent = "done?";
-  btn.textContent = "remove";
-  //^ adds text to elements
+    p.textContent = userInput.value;
+    wipe.textContent = "done?";
+    btn.textContent = "remove";
+    //^ adds text to elements
 
-  btn.classList.add("hidden");
-  //^ hides the "remove" button
+    btn.classList.add("hidden");
+    //^ hides the "remove" button
 
-  li.append(p, wipe, btn);
-  document.querySelector("ul").append(li);
-  //^ renders/appends task + interactive buttons to a list
+    li.append(p, wipe, btn);
+    document.querySelector("ul").append(li);
+    //^ renders/appends task + interactive buttons to a list
 
-  wipe.addEventListener("click", () => {
-    p.classList.add("wiped");
-    btn.classList.remove("hidden");
-    btn.classList.add("completed");
-    wipe.classList.add("hidden");
-  }); //^ "wipes out" selected task and "marks it as completed", adds option to remove after.
+    wipe.addEventListener("click", () => {
+      p.classList.add("wiped");
+      btn.classList.remove("hidden");
+      btn.classList.add("completed");
+      wipe.classList.add("hidden");
+    }); //^ "wipes out" selected task and "marks it as completed", adds option to remove after.
 
-  btn.addEventListener("click", () => li.remove());
-  userInput.value = "";
-  //^ function to remove selected task from list and clears the input-field
+    btn.addEventListener("click", () => li.remove());
+    userInput.value = "";
+    //^ function to remove selected task from list and clears the input-field
+  }
 }
