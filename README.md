@@ -22,4 +22,6 @@ other stuff
 
 [Transition assignment](https://kodehodeknut.github.io/animation%20assignment/)
 
-[Drumkit assignment](https://kodehodeknut.github.io/drumkit-assignment/)
+[Drum-kit assignment](https://kodehodeknut.github.io/drumkit-assignment/)
+
+[To-do list assignment](https://kodehodeknut.github.io/todo-assignment/)
