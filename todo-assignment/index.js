@@ -4,13 +4,16 @@ const clearBtn = document.querySelector("#clear-button");
 const sortBtn = document.querySelector("#sort-abc-button");
 
 const lsTask = JSON.parse(localStorage.getItem("lsTask"));
+//note: my application of localStorage is borrowed but fully deconstructed and rewritten to match my code
+//      as i didn't figure out how to do it on my own (i tried using a full array of li's instead of the object v)
 
 if (lsTask) {
   lsTask.forEach((task) => {
     addToList(task);
   });
 }
-//^ if lsTask exists (in localStorage), use values from lsTask object in the addToList function and runs it for each task from previous ls updates
+//^ if lsTask exists (this case its in localStorage),
+//  use values from lsTask object in the addToList function and runs it for each task from previous ls updates
 
 userInput.addEventListener("keyup", (e) => {
   if (e.code !== "Enter" || userInput.value.match(/^ *$/)) return;
@@ -39,10 +42,10 @@ sortBtn.addEventListener("click", () => {
     .forEach((li) => ul.appendChild(li));
   updateLS();
 });
-//^ sorts list numerically and alphabetically top to bottom
+//^ sorts list numerically and alphabetically top to bottom and updates the LS
 
 function addToList(task) {
-  if (userInput.value.match("task")) {
+  if (userInput.value.endsWith("task")) {
     window.open("https://www.youtube.com/watch?v=atQOxz9a1zo", "_blank");
     userInput.placeholder = "*add a real task...";
     userInput.focus();
@@ -95,8 +98,11 @@ function addToList(task) {
     btn.addEventListener("click", () => {
       li.remove();
       updateLS();
+      if (document.querySelector("ul").textContent == "") {
+        document.querySelector("#p-el").textContent = "*awaiting task*";
+      }
     });
-    //^ removes selected task/li element and updates the ls
+    //^ removes selected task/li element and updates the ls, and sets "status" to awaiting if UL is empty
 
     userInput.focus();
     userInput.value = "";
@@ -116,6 +122,5 @@ function updateLS() {
     });
   });
   localStorage.setItem("lsTask", JSON.stringify(storedList));
-  console.log(localStorage);
 }
 //^ puts object in localStorage with textContent from firstChild of each li (<p>) and checks if the task has been marked as completed
