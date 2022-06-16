@@ -3,20 +3,33 @@ const submitBtn = document.querySelector("#submit-btn");
 const clearBtn = document.querySelector("#clear-button");
 const sortBtn = document.querySelector("#sort-abc-button");
 
+const lsTask = JSON.parse(localStorage.getItem("lsTask"));
+
+if (lsTask) {
+  lsTask.forEach((task) => {
+    addToList(task);
+  });
+}
+//^ if lsTask exists (in localStorage), use values from lsTask object in the addToList function and runs it for each task from previous ls updates
+
 userInput.addEventListener("keyup", (e) => {
   if (e.code !== "Enter" || userInput.value.match(/^ *$/)) return;
   addToList();
-}); //^ value from input appends to list when enter key is pressed
+});
+//^ value from input appends to list when enter key is pressed
 
 submitBtn.addEventListener("click", () => {
   if (userInput.value.match(/^ *$/)) return;
   addToList();
-}); //^ value from input appends to list when submit button is pressed
+});
+//^ value from input appends to list when submit button is pressed
 
 clearBtn.addEventListener("click", () => {
   document.querySelector("#p-el").textContent = "*awaiting tasks*";
   document.querySelectorAll("li").forEach((li) => li.remove());
-}); //^ clears the entire list and resets "status" of list
+  localStorage.clear();
+});
+//^ clears the entire list and resets "status" of list
 
 sortBtn.addEventListener("click", () => {
   let ul = document.querySelector("ul");
@@ -24,9 +37,11 @@ sortBtn.addEventListener("click", () => {
   Array.from(ul.getElementsByTagName("li"))
     .sort((a, b) => a.textContent.localeCompare(b.textContent))
     .forEach((li) => ul.appendChild(li));
-}); //^ sorts list numerically and alphabetically top to bottom
+  updateLS();
+});
+//^ sorts list numerically and alphabetically top to bottom
 
-function addToList() {
+function addToList(task) {
   if (userInput.value.match("task")) {
     window.open("https://www.youtube.com/watch?v=atQOxz9a1zo", "_blank");
     userInput.placeholder = "*add a real task...";
@@ -44,27 +59,63 @@ function addToList() {
     //^ creates elements to be used in list
 
     p.textContent = userInput.value;
+    if (task) {
+      p.textContent = task.text;
+    }
     wipe.textContent = "done?";
     btn.textContent = "remove";
-    //^ adds text to elements
+    //^ adds text to elements, if task in ls exists, use its .text value instead
 
     btn.classList.add("hidden");
     //^ hides the "remove" button
+
+    function hide() {
+      p.classList.add("wiped");
+      btn.classList.remove("hidden");
+      btn.classList.add("completed");
+      wipe.classList.add("hidden");
+    }
+    //^ function to "wipe out" selected task and "marks it as completed", adds option to remove after.
+
+    if (task && task.completed) {
+      hide();
+    }
+    //^ if task in ls exists and meets the completed check, run the hide command
 
     li.append(p, wipe, btn);
     document.querySelector("ul").append(li);
     //^ renders/appends task + interactive buttons to a list
 
     wipe.addEventListener("click", () => {
-      p.classList.add("wiped");
-      btn.classList.remove("hidden");
-      btn.classList.add("completed");
-      wipe.classList.add("hidden");
-    }); //^ "wipes out" selected task and "marks it as completed", adds option to remove after.
+      hide();
+      updateLS();
+    });
+    //^ runs hide function and updates ls when clicked
 
-    btn.addEventListener("click", () => li.remove());
+    btn.addEventListener("click", () => {
+      li.remove();
+      updateLS();
+    });
+    //^ removes selected task/li element and updates the ls
+
     userInput.focus();
     userInput.value = "";
-    //^ function to remove selected task from list and clears the input-field
+    updateLS();
+    //^ clears the input-field, sets its value to "" and updates ls
   }
 }
+
+function updateLS() {
+  const taskList = document.querySelectorAll("li");
+  const storedList = [];
+
+  taskList.forEach((li) => {
+    storedList.push({
+      text: li.firstChild.textContent,
+      completed: li.innerText.includes("remove"),
+    });
+  });
+  localStorage.setItem("lsTask", JSON.stringify(storedList));
+  console.log(localStorage);
+}
+//^ puts object in localStorage with textContent from firstChild of each li (<p>) and checks if the task has been marked as completed
