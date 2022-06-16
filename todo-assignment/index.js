@@ -6,6 +6,7 @@ const sortBtn = document.querySelector("#sort-abc-button");
 const lsTask = JSON.parse(localStorage.getItem("lsTask"));
 //note: my application of localStorage is borrowed but fully deconstructed and rewritten to match my code
 //      as i didn't figure out how to do it on my own (i tried using a full array of li's instead of the object v)
+console.log();
 
 if (lsTask) {
   lsTask.forEach((task) => {
@@ -83,7 +84,7 @@ function addToList(task) {
     if (task && task.completed) {
       hide();
     }
-    //^ if task in ls exists and meets the completed check, run the hide command
+    //^ if task in ls exists and meets the condition, run the hide command
 
     li.append(p, wipe, btn);
     document.querySelector("ul").append(li);
