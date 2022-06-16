@@ -6,7 +6,6 @@ const sortBtn = document.querySelector("#sort-abc-button");
 const lsTask = JSON.parse(localStorage.getItem("lsTask"));
 //note: my application of localStorage is borrowed but fully deconstructed and rewritten to match my code
 //      as i didn't figure out how to do it on my own (i tried using a full array of li's instead of the object v)
-console.log();
 
 if (lsTask) {
   lsTask.forEach((task) => {
@@ -16,18 +15,21 @@ if (lsTask) {
 //^ if lsTask exists (this case its in localStorage),
 //  use values from lsTask object in the addToList function and runs it for each task from previous ls updates
 
+// ===== ENTER KEY PRESSED INSIDE INPUT =====
 userInput.addEventListener("keyup", (e) => {
   if (e.code !== "Enter" || userInput.value.match(/^ *$/)) return;
   addToList();
 });
 //^ value from input appends to list when enter key is pressed
 
+// ===== SUBMIT BUTTON =====
 submitBtn.addEventListener("click", () => {
   if (userInput.value.match(/^ *$/)) return;
   addToList();
 });
 //^ value from input appends to list when submit button is pressed
 
+// ===== CLEAR BUTTON =====
 clearBtn.addEventListener("click", () => {
   document.querySelector("#p-el").textContent = "*awaiting tasks*";
   document.querySelectorAll("li").forEach((li) => li.remove());
@@ -35,6 +37,7 @@ clearBtn.addEventListener("click", () => {
 });
 //^ clears the entire list and resets "status" of list
 
+// ===== SORT BUTTON =====
 sortBtn.addEventListener("click", () => {
   let ul = document.querySelector("ul");
 
