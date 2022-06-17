@@ -4,7 +4,7 @@ const clearBtn = document.querySelector("#clear-button");
 const sortBtn = document.querySelector("#sort-abc-button");
 
 const lsTask = JSON.parse(localStorage.getItem("lsTask"));
-//note: my application of localStorage is borrowed but fully deconstructed and rewritten to match my code
+//note: my application of localStorage is not original but i deconstructed, learned and rewrote to match my code
 //      as i didn't figure out how to do it on my own (i tried using a full array of li's instead of the object v)
 
 if (lsTask) {
