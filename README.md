@@ -1,14 +1,14 @@
 Module 3
 
-[counter](https://knutcode.github.io/kodehodeknut.github.io/counter/)
+[counter](https://knutcode.github.io/kodehode/counter/)
 
-[Blackjack](https://knutcode.github.io/kodehodeknut.github.io/blackjack/)
+[Blackjack](https://knutcode.github.io/kodehode/blackjack/)
 
-[Unit converter (Module 3 Solo Project)](https://knutcode.github.io/kodehodeknut.github.io/unit-converter/)
+[Unit converter (Module 3 Solo Project)](https://knutcode.github.io/kodehode/unit-converter/)
 
-[Password generator (Module 3 Solo Project)](https://knutcode.github.io/kodehodeknut.github.io/password-generator/)
+[Password generator (Module 3 Solo Project)](https://knutcode.github.io/kodehode/password-generator/)
 
-[Invoice Creator (Module 3 Solo Project)](https://knutcode.github.io/kodehodeknut.github.io/invoice-creator/)
+[Invoice Creator (Module 3 Solo Project)](https://knutcode.github.io/kodehode/invoice-creator/)
 
 
 
@@ -16,10 +16,10 @@ Module 3
 
 Kodehode stuff
 
-[Simple page assignment](https://knutcode.github.io/kodehodeknut.github.io/simplepage-assignment/)
+[Simple page assignment](https://knutcode.github.io/kodehode/simplepage-assignment/)
 
-[Transition assignment](https://knutcode.github.io/kodehodeknut.github.io/css-transition-assignment/)
+[Transition assignment](https://knutcode.github.io/kodehode/css-transition-assignment/)
 
-[Drum-kit assignment](https://knutcode.github.io/kodehodeknut.github.io/drumkit-assignment/)
+[Drum-kit assignment](https://knutcode.github.io/kodehode/drumkit-assignment/)
 
-[To-do list assignment](https://knutcode.github.io/kodehodeknut.github.io/todo-assignment/)
+[To-do list assignment](https://knutcode.github.io/kodehode/todo-assignment/)
