@@ -6,11 +6,11 @@ Module 3
 
 [Blackjack](https://kodehodeknut.github.io/blackjack/)
 
-[Unit converter 3.2](https://kodehodeknut.github.io/solo%20project%20(3.2)/)
+[Unit converter (Module 3 Solo Project)](https://kodehodeknut.github.io/unit-converter/)
 
-[Password generator 3.4](https://kodehodeknut.github.io/solo%20project%20(3.4)/)
+[Password generator (Module 3 Solo Project)](https://kodehodeknut.github.io/password-generator/)
 
-[Invoice Creator 3 Final](https://kodehodeknut.github.io/solo-project-3-final/)
+[Invoice Creator (Module 3 Solo Project)](https://kodehodeknut.github.io/invoice-creator/)
 
 
 
@@ -18,9 +18,9 @@ Module 3
 
 other stuff
 
-[Simple page assignment](https://kodehodeknut.github.io/innlevering-simplepage/)
+[Simple page assignment](https://kodehodeknut.github.io/simeplepage-assignment/)
 
-[Transition assignment](https://kodehodeknut.github.io/animation%20assignment/)
+[Transition assignment](https://kodehodeknut.github.io/css-transition-assignment/)
 
 [Drum-kit assignment](https://kodehodeknut.github.io/drumkit-assignment/)
 
