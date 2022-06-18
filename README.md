@@ -18,7 +18,7 @@ Module 3
 
 other stuff
 
-[Simple page assignment](https://kodehodeknut.github.io/simeplepage-assignment/)
+[Simple page assignment](https://kodehodeknut.github.io/simplepage-assignment/)
 
 [Transition assignment](https://kodehodeknut.github.io/css-transition-assignment/)
 
