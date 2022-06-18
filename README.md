@@ -1,5 +1,3 @@
-# kodehodeknut.github.io
-
 Module 3
 
 [counter](https://knutcode.github.io/kodehodeknut.github.io/counter/)
