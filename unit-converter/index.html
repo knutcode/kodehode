@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  </head>
+
+  <body onload="calcNumber()">
+    <main class="converter">
+      <section class="top">
+        <h1 class="toptxt">Metric/Imperial unit conversion</h1>
+        <input type="text" class="result" id="input-el" value="20" oninput="calcNumber()" maxlength="6" />
+      </section>
+
+      <section class="bottom">
+        <div class="lol">
+          <h3 class="infoheader">Length (Meter/Feet)</h3>
+          <p class="infotxt" id="meterfeet"></p>
+        </div>
+
+        <div class="lol">
+          <h3 class="infoheader">Volume (Liters/Gallons)</h3>
+          <p class="infotxt" id="litergallon"></p>
+        </div>
+
+        <div class="lol">
+          <h3 class="infoheader">Mass (Kilograms/Pounds)</h3>
+          <p class="infotxt" id="kilopound"></p>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

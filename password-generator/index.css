@@ -1,0 +1,161 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter";
+  font-style: normal;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background: #1d1d1d;
+}
+
+/* 
+    TABLE OF CONTENTS 
+    1. CONTAINER
+    2. TOP SECTION
+      - Header, subheader, generate button
+    3. BOTTOM SECTION 
+      - password text-input(4)
+*/
+
+/* ----- CONTAINER ----- */
+
+.container {
+  background: #1f2937;
+  padding: 4.6rem 5.1rem;
+  border-radius: 1.6rem;
+  width: 45rem;
+  margin: 50px auto;
+}
+
+/* ----- TOP SECTION ----- */
+
+h1 {
+  font-family: "karla";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  letter-spacing: -0.025em;
+  margin: 2em 0 1rem;
+  padding: 0;
+  max-width: 35rem;
+  line-height: 4rem;
+}
+
+h1 > span {
+  color: #4adf86;
+}
+
+.hero > p {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #d5d4d8;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0 3rem;
+  padding: 3.5rem 0;
+  border-bottom: 1px #2f3e53 solid;
+}
+
+button {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 1.6rem;
+  color: white;
+  background: #10b981;
+  border-radius: 6px;
+  border: none;
+  padding: 0.75em 1.2em;
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  background: #21956e;
+  cursor: pointer;
+}
+
+/* ----- BOTTOM SECTION ----- */
+
+.copy-text {
+  font-size: 1.6rem;
+  margin: 0 0 30px 0;
+  color: #d5d4d8;
+}
+
+/* div that contains all password values */
+.passwords {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2.7rem;
+  column-gap: 0;
+}
+
+input {
+  border-radius: 6px;
+  outline-style: none;
+  border-style: none;
+  color: #10b981;
+  padding: 1rem 0;
+  width: 45%;
+  cursor: pointer;
+}
+
+input:active {
+  border-radius: 6px;
+  outline-style: none;
+  border-style: none;
+  color: #ffffff;
+  padding: 1rem 0;
+  width: 45%;
+  cursor: pointer;
+}
+
+#slider {
+  margin: 0 5px;
+  width: 18rem;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  cursor: pointer;
+  background: #273549;
+  border-radius: 20px;
+}
+
+output {
+  font-size: 1.6rem;
+  align-self: center;
+  margin: 0;
+  min-width: 18px;
+  text-align: right;
+}
+
+.icon {
+  background-image: url("img/Icon-2.png");
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #273549;
+  text-align: center;
+}
+
+/* .icon:focus {
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: #273549;
+  text-align: center;
+} */
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */

@@ -1,0 +1,73 @@
+html,
+body {
+  background: rgb(32, 32, 32);
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  font-style: normal;
+  text-align: center;
+}
+
+.converter {
+  max-width: 550px;
+  height: 550px;
+  margin: 50px auto;
+}
+
+.top {
+  color: #ffffff;
+  max-width: auto;
+  background: linear-gradient(246.26deg, #585dfe 0%, #fb3796 100%);
+  border-radius: 35px 35px 0 0;
+}
+
+.toptxt {
+  font-size: 22px;
+  line-height: 38px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 53px 0 0 0;
+}
+
+.result {
+  font-size: 98px;
+  font-weight: 800;
+  margin: 0px;
+  padding: 15px 0 35px 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+::placeholder {
+  color: white;
+}
+
+.bottom {
+  color: #ffffff;
+  background: #1f2937;
+  padding: 25px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 0 0 35px 35px;
+}
+
+.infoheader {
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.infotxt {
+  color: #bfbfbf;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.lol {
+  padding: 2.5px;
+}
