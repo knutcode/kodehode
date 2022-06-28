@@ -1,4 +1,5 @@
 let card = document.querySelector(".card-face");
+let cardBg = document.querySelector(".container");
 
 async function getAllPokemon() {
   card.innerHTML = "";
@@ -15,6 +16,8 @@ async function getAllPokemon() {
   let type = document.createElement("p");
   let img = document.createElement("img");
 
+  pokeTypeContainer.classList.add("types");
+
   let stringId = data.id.toString();
   let paddedId = stringId.padStart(3, "0");
 
@@ -30,11 +33,12 @@ async function getAllPokemon() {
   if (data.types[1]) {
     let typeTwo = document.createElement("p");
     typeTwo.textContent = data.types[1].type.name;
+    typeTwo.classList.add(`${data.types[0].type.name}`);
     pokeTypeContainer.append(typeTwo);
   }
 
-  if (type.textContent === "grass") {
-    card.firstChild.lastChild.children;
+  if (type.textContent === data.types[0].type.name) {
+    type.classList.add(`${data.types[0].type.name}`);
+    cardBg.id = `${data.types[0].type.name}`;
   }
-  console.log(card.firstChild.lastChild.children);
 }
