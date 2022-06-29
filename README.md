@@ -6,3 +6,5 @@
 [Drum-kit assignment](https://knutcode.github.io/kodehode/drumkit-assignment/)
 
 [To-do list assignment](https://knutcode.github.io/kodehode/todo-assignment/)
+
+[PokeAPI v2 test](https://knutcode.github.io/kodehode/pokemon-api/)
