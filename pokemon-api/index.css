@@ -9,7 +9,9 @@ body {
 }
 
 .container-bg {
+  margin: 0 auto;
   max-width: 420px;
+  min-width: 275px;
   background-image: url("img/pokeball.png");
   background-repeat: no-repeat;
   background-position: 98% 36%;
@@ -37,6 +39,22 @@ body {
   display: flex;
   width: 90%;
   flex-direction: column;
+}
+
+button {
+  background: white;
+  border: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 60px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .card-face div {
@@ -80,10 +98,25 @@ body {
 }
 
 .text-area {
-  width: 100%;
+  max-width: 100%;
   height: 350px;
   background: whitesmoke;
   border-radius: 40px 40px 0 0;
+}
+
+.text-area * {
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+.text-area h2 {
+  margin-top: 30px;
+  font-size: 15px;
+  color: rgb(119, 119, 119);
+}
+
+.text-area p {
+  padding-left: 15px;
 }
 
 .grass {
@@ -135,11 +168,11 @@ body {
 }
 
 .ice {
-  background: rgb(43, 134, 134);
+  background: rgb(58, 143, 143);
 }
 
 .ghost {
-  background: rgb(70, 42, 70);
+  background: rgb(109, 87, 109);
 }
 
 .dragon {
