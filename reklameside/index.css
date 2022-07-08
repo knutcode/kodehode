@@ -4,6 +4,57 @@ body {
   color: white;
 }
 
+.main-grid {
+  height: 100vh;
+  display: grid;
+
+  grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+  grid-template-rows: 80px repeat(5, 1fr);
+}
+
+/* header / nav */
+header {
+  position: sticky;
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+}
+
+nav {
+  font-family: "Lobster", cursive;
+  color: #da0033;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+
+nav h1 {
+  margin: auto 0;
+  font-size: 30px;
+  padding-left: 40px;
+}
+
+nav h1:hover {
+  cursor: pointer;
+}
+
+nav i {
+  margin: auto 0 auto auto;
+  padding-right: 40px;
+  font-size: 30px;
+}
+
+nav i:hover {
+  cursor: pointer;
+}
+
+/* main content */
+.content {
+  display: flex;
+  position: relative;
+  grid-column: 3 / 6;
+  grid-row: 3 / 6;
+}
+
 .content h2 {
   font-size: 40px;
   font-weight: 600;
@@ -14,63 +65,6 @@ body {
 .content p {
   font-size: 20px;
   text-align: center;
-}
-
-a {
-  text-align: center;
-  color: white;
-  font-size: 25px;
-  text-decoration: none;
-  padding: 15px 30px;
-  /* background: rgb(189, 66, 66); */
-  background: #bc002d;
-  border-radius: 50px;
-  display: block;
-  cursor: pointer;
-  min-width: 250px;
-  margin-top: 100px;
-  transition: 1s;
-}
-
-a:hover {
-  background: rgb(168, 73, 73);
-  transform: scale(1.2);
-}
-
-.main-grid {
-  height: 100vh;
-  display: grid;
-
-  grid-template-columns: 1fr repeat(5, 1fr) 1fr;
-  grid-template-rows: 80px repeat(5, 1fr);
-}
-
-header {
-  position: sticky;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1 / -1;
-  grid-row: 1 / span 1;
-}
-
-.nav {
-  color: #bc002d;
-  display: flex;
-  flex-direction: row;
-  margin-right: auto;
-  padding-left: 40px;
-}
-
-.nav h1:hover {
-  cursor: pointer;
-}
-
-.content {
-  display: flex;
-  position: relative;
-  grid-column: 3 / 6;
-  grid-row: 3 / 6;
 }
 
 .content-wrapper {
@@ -87,6 +81,28 @@ header {
   min-width: 350px;
 }
 
+/* CTA button */
+a {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 15px 30px;
+  background: #bc002d;
+  border-radius: 50px;
+  display: block;
+  cursor: pointer;
+  min-width: 250px;
+  margin-top: 100px;
+  transition: 1s;
+}
+
+a:hover {
+  background: #be1a40;
+  transform: scale(1.2);
+}
+
+/* translucent background */
 .overlay-dark {
   position: relative;
   grid-column: 1 / -1;
@@ -101,6 +117,7 @@ header {
   z-index: 1;
 }
 
+/* background images */
 .img-container {
   position: relative;
   grid-column: 1 / -1;
@@ -121,7 +138,7 @@ header {
   object-fit: cover;
 }
 
-/* rotating image library */
+/* rotating images */
 .img-container img:nth-child(1) {
   animation: fade1 20s infinite;
 }
