@@ -22,16 +22,19 @@ a {
   font-size: 25px;
   text-decoration: none;
   padding: 15px 30px;
-  background: rgb(189, 66, 66);
+  /* background: rgb(189, 66, 66); */
+  background: #bc002d;
   border-radius: 50px;
   display: block;
   cursor: pointer;
   min-width: 250px;
   margin-top: 100px;
+  transition: 1s;
 }
 
 a:hover {
-  background: rgb(204, 92, 92);
+  background: rgb(168, 73, 73);
+  transform: scale(1.2);
 }
 
 .main-grid {
@@ -52,11 +55,15 @@ header {
 }
 
 .nav {
-  color: rgb(212, 58, 58);
+  color: #bc002d;
   display: flex;
   flex-direction: row;
   margin-right: auto;
   padding-left: 40px;
+}
+
+.nav h1:hover {
+  cursor: pointer;
 }
 
 .content {
