@@ -27,7 +27,7 @@ function collatz(n) {
   let steps = 0;
   let result = n;
 
-  if (n > 0)
+  if (n > 1)
     while (result !== 1) {
       if (result % 2 === 0) {
         result = result / 2;
