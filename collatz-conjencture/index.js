@@ -7,20 +7,25 @@ const highestValue = document.getElementById("highest-value");
 let arr = [];
 
 function calcValue() {
-  return inputNum.value;
-}
-
-button.addEventListener("click", () => {
   if (inputNum.value === "") {
     highestValue.textContent = "0";
     firstValue.textContent = "0";
     stepsValue.textContent = "0";
   } else {
     arr = [];
-    collatz(calcValue());
+    collatz(inputNum.value);
     inputNum.value = "";
   }
   inputNum.focus();
+}
+
+button.addEventListener("click", () => {
+  calcValue();
+});
+
+inputNum.addEventListener("keyup", (e) => {
+  if (e.code !== "Enter") return;
+  calcValue();
 });
 
 function collatz(n) {
