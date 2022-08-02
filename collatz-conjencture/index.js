@@ -30,15 +30,15 @@ inputNum.addEventListener("keyup", (e) => {
 
 function collatz(n) {
   let steps = 0;
-  let result = n;
+  let num = n;
 
   if (n > 1)
-    while (result !== 1) {
-      if (result % 2 === 0) {
-        result = result / 2;
+    while (num !== 1) {
+      if (num % 2 === 0) {
+        num = num / 2;
       } else {
-        result = result * 3 + 1;
-        arr.push(result);
+        num = num * 3 + 1;
+        arr.push(num);
       }
       steps++;
     }
