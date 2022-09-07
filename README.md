@@ -8,4 +8,4 @@ repo of my projects and assignments @Kodehode
 
 [To-do list assignment](https://knutcode.github.io/kodehode/todo-assignment/)
 
-[PokéAPI v2 test](https://knutcode.github.io/kodehode/pokemon-api/)
+[PokéAPI v2 assignment](https://knutcode.github.io/kodehode/pokemon-api/)
