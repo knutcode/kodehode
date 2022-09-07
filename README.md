@@ -1,4 +1,4 @@
-###Collection of my projects and assignments @Kodehode
+### Collection of my projects and assignments @Kodehode
 
 [Simple page assignment](https://knutcode.github.io/kodehode/simplepage-assignment/)
 
